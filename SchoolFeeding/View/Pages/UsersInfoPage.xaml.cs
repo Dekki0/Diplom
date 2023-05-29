@@ -25,9 +25,5 @@ namespace SchoolFeeding.View.Pages
             InitializeComponent();
         }
 
-        private void ButtonClickHandler(object sender, RoutedEventArgs e)
-        {
-
-        }
     }
 }

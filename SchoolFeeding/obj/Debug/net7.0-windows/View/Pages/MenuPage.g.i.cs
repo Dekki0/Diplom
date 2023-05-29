@@ -53,7 +53,7 @@ namespace SchoolFeeding.View.Pages {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/SchoolFeeding;V1.0.0.0;component/view/pages/menupage.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/SchoolFeeding;component/view/pages/menupage.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\..\View\Pages\MenuPage.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

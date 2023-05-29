@@ -24,5 +24,6 @@ namespace SchoolFeeding.View.Pages
         {
             InitializeComponent();
         }
+
     }
 }

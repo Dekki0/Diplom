@@ -5,8 +5,53 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SchoolFeeding.View"
         mc:Ignorable="d"
-        Title="LoginView" Height="450" Width="800">
-    <Grid>
-        <ContentControl Content="{Binding Page}"/> 
-    </Grid>
+        Title="LoginView" Height="350" Width="400">
+    <StackPanel>
+        <Label 
+            FontSize="30"
+            HorizontalAlignment="Center"
+            Margin="20"
+            Content="Вход в систему"/>
+      
+
+        <Grid Margin="10" Height="209">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <ColumnDefinition Width="2*" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+            <Label 
+                HorizontalAlignment="Right"
+                   VerticalAlignment="Center"
+                Content="Логин: "/>
+            <Label 
+                HorizontalAlignment="Right"
+                   VerticalAlignment="Center"
+                Grid.Row="1"
+                Content="Пароль: "/>
+
+            <TextBox
+                HorizontalAlignment="Left"
+                   VerticalAlignment="Center"
+                Grid.Column="1" Width="181" Height="26"/>
+            <TextBox
+                HorizontalAlignment="Left"
+                   VerticalAlignment="Center"
+                Grid.Row="1"
+                Grid.Column="1"
+                Width="181" Height="26"/>
+
+            <Button Margin="20"
+                Content="Войти"
+                Grid.Row="2"
+                Grid.ColumnSpan="2"/>
+
+        </Grid>
+        
+    </StackPanel>
 </Window>

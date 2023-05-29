@@ -13,6 +13,7 @@
             <RowDefinition/>
             <RowDefinition/>
             <RowDefinition/>
+            <RowDefinition/>
         </Grid.RowDefinitions>
 
         <Button 
@@ -33,12 +34,19 @@
             FontSize="20"
             Grid.Row="2"
             Content="Администрирование"/>
+
+        <Button
+            Click="FAQ"
+            Margin="20 2 20 2"
+            FontSize="20"
+            Grid.Row="3"
+            Content="Справка"/>
         
         <Button
             Click="Exit"
             Margin="20 2 20 2"
             FontSize="20"
-            Grid.Row="3"
+            Grid.Row="4"
             Content="Выход"/>
     </Grid>
 </UserControl>

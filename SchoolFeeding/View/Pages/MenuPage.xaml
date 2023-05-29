@@ -4,9 +4,12 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:SchoolFeeding.View.Pages"
+              xmlns:utilities="clr-namespace:SchoolFeeding.Model.Utilities"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
-
+    <UserControl.Resources>
+        <utilities:VisibilityConverter x:Key="VisibilityConverter"/>
+    </UserControl.Resources>
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition/>
@@ -17,36 +20,33 @@
         </Grid.RowDefinitions>
 
         <Button 
-            
-            Margin="20 2 20 2"
+            Margin="250 20 250 20"
             FontSize="20"
             Content="Просмотр информации"/>
         <Button
-            
-            Margin="20 2 20 2"
+            Margin="250 20 250 20"
             FontSize="20"
             Grid.Row="1"
             Content="Отчётность" />
         
         <Button
-            
-            Margin="20 2 20 2"
-            FontSize="20"
-            Grid.Row="2"
-            Content="Администрирование"/>
-
-        <Button
-            
-            Margin="20 2 20 2"
+            Margin="250 20 250 20"
             FontSize="20"
             Grid.Row="3"
+            Content="Администрирование"
+            Visibility="{Binding IsButtonVisible, Converter={StaticResource VisibilityConverter}}"/>
+
+        <Button
+            Margin="250 20 250 20"
+            FontSize="20"
+            Grid.Row="2"
             Content="Справка"/>
         
-        <Button
-            
-            Margin="20 2 20 2"
+        <Button 
+            Margin="250 20 250 20"
             FontSize="20"
             Grid.Row="4"
-            Content="Выход"/>
+            Content="Выход"
+            Command="{Binding MenuCommand[2]}"/>
     </Grid>
 </UserControl>

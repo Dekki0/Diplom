@@ -6,5 +6,10 @@
     <DataTemplate DataType="{x:Type viewModel:LoginViewModel}">
         <viewWindow:LoginView/>
     </DataTemplate>
-    
+    <DataTemplate DataType="{x:Type viewModel:MainViewModel}">
+        <viewWindow:MainWindow/>
+    </DataTemplate>
+    <DataTemplate DataType="{x:Type viewModel:MenuViewModel}">
+        <viewPage:MenuPage/>
+    </DataTemplate>
 </ResourceDictionary>

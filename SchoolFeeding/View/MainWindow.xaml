@@ -3,36 +3,23 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:SchoolFeeding"
+        xmlns:local="clr-namespace:SchoolFeeding.ViewModel"
         xmlns:pages="clr-namespace:SchoolFeeding.View.Pages"
+       
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800"
         ResizeMode="NoResize">
+    <Window.DataContext>
+        <local:MainViewModel/>
+    </Window.DataContext>
+
     <Grid>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition/>
-        </Grid.ColumnDefinitions>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="30"/>
-            <RowDefinition/>
-        </Grid.RowDefinitions>
         <Menu 
             HorizontalAlignment="Left" 
             Margin="5,4,0,4" 
             Width="45"
-            >
-            <Menu>
-                <MenuItem Header="File">
-                    <MenuItem Header="Back" />
-                    <MenuItem Header="Undo" />
-                    <Separator />
-                    <MenuItem Header="Exit" />
-                </MenuItem>
-            </Menu>
-        </Menu>
-        <ContentControl Content="{Binding }"/>
-        <ContentControl 
-            Grid.Column="1"
+            />
+        <ContentControl
             Content="{Binding Page}"/>
 
     </Grid>

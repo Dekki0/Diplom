@@ -10,8 +10,8 @@ namespace SchoolFeeding.ViewModel.Services
 {
     public class ViewModelBase : INotifyPropertyChanged
     {
-        public event PropertyChangedEventHandler PropertyChanged;
-        protected void SetProperty<T>(ref T backingField, T value, [CallerMemberName] string propertyName = null)
+        public event PropertyChangedEventHandler? PropertyChanged;
+        protected void SetProperty<T>(ref T backingField, T value, [CallerMemberName] string? propertyName = null)
         {
             if (!Equals(backingField, value))
             {

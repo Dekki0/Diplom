@@ -23,20 +23,16 @@ namespace SchoolFeeding.ViewModel.Services
             _canExecute = canExecute;
         }
 
-        public bool CanExecute(object parameter)
-        {
-            return _canExecute?.Invoke((T)parameter) ?? true;
-        }
+        public bool CanExecute(object parameter)=>
+            _canExecute?.Invoke((T)parameter) ?? true;
 
-        public void Execute(object parameter)
-        {
+        public void Execute(object parameter)=>
             _execute((T)parameter);
-        }
 
-        public event EventHandler CanExecuteChanged
+        public event EventHandler? CanExecuteChanged
         {
-            add { CommandManager.RequerySuggested += value; }
-            remove { CommandManager.RequerySuggested -= value; }
+            add =>CommandManager.RequerySuggested += value;
+            remove =>CommandManager.RequerySuggested -= value; 
         }
     }
 }

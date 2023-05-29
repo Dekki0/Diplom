@@ -21,6 +21,7 @@ namespace SchoolFeeding.ViewModel
         private string _login;
         private string _password;
         #endregion
+
         #region public property
         public string Login
 		{
@@ -34,6 +35,7 @@ namespace SchoolFeeding.ViewModel
 		}
 		public ICommand LoginCommand { get;}
         #endregion
+
         #region public constructor
         public LoginViewModel()
 		{
@@ -42,6 +44,7 @@ namespace SchoolFeeding.ViewModel
             _windowService = new WindowService();
         }
         #endregion
+
         #region private methods
         private void ChangePage(object args)
 		{
@@ -63,5 +66,6 @@ namespace SchoolFeeding.ViewModel
                 MessageBox.Show("Неверный логин или пароль", "Внимание", MessageBoxButton.OK, MessageBoxImage.Warning);
         }
         #endregion
+
     }
 }

@@ -3,9 +3,13 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:SchoolFeeding.View"
+        xmlns:local="clr-namespace:SchoolFeeding.ViewModel"
         mc:Ignorable="d"
-        Title="LoginView" Height="350" Width="400">
+        Title="LoginView" Height="350" Width="300"
+        ResizeMode="NoResize">
+    <Window.DataContext>
+        <local:LoginViewModel/>
+    </Window.DataContext>
     <StackPanel>
         <Label 
             FontSize="30"
@@ -36,20 +40,30 @@
                 Content="Пароль: "/>
 
             <TextBox
+                Grid.Column="1" 
                 HorizontalAlignment="Left"
-                   VerticalAlignment="Center"
-                Grid.Column="1" Width="181" Height="26"/>
+                VerticalAlignment="Center"
+                Width="150" Height="30"
+                MaxLength="15"
+                FontSize="20"
+                VerticalContentAlignment="Center"
+                Text="{Binding Login}"/>
             <TextBox
                 HorizontalAlignment="Left"
                    VerticalAlignment="Center"
                 Grid.Row="1"
                 Grid.Column="1"
-                Width="181" Height="26"/>
+                Width="150" Height="30"
+                MaxLength="15"
+                FontSize="20"
+                VerticalContentAlignment="Center"
+                Text="{Binding Password}"/>
 
-            <Button Margin="20"
+            <Button Margin="40 20 40 20"
                 Content="Войти"
                 Grid.Row="2"
-                Grid.ColumnSpan="2"/>
+                Grid.ColumnSpan="2"
+                    Command="{Binding LoginCommand}"/>
 
         </Grid>
         

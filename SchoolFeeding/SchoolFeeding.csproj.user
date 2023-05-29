@@ -42,5 +42,8 @@
     <Page Update="View\Pages\UsersInfoPage.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="View\Style\NavigationTemplate.xaml">
+      <SubType>Designer</SubType>
+    </Page>
   </ItemGroup>
 </Project>

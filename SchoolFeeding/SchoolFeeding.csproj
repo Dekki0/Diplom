@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <OutputType>WinExe</OutputType>
+    <OutputType>Exe</OutputType>
     <TargetFramework>net7.0-windows</TargetFramework>
     <Nullable>enable</Nullable>
     <UseWPF>true</UseWPF>
@@ -24,9 +24,15 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Model\DatabaseModel\" />
-    <Folder Include="Model\Entities\" />
-    <Folder Include="ViewModel\Services\" />
+    <Folder Include="Model\Dto\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EditorConfigFiles Remove="C:\Users\artem\Desktop\DEKKI\SchoolFeeding\.editorconfig" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="C:\Users\artem\Desktop\DEKKI\SchoolFeeding\.editorconfig" />
   </ItemGroup>
 
 </Project>

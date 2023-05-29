@@ -1,20 +1,20 @@
 ﻿SchoolFeeding
 1.0.0.0
 
-winexe
+exe
 C#
 .cs
-C:\Users\egorb\source\repos\SchoolFeeding\SchoolFeeding\obj\Debug\net7.0-windows\
+C:\Users\artem\Desktop\DEKKI\SchoolFeeding\obj\Debug\net7.0-windows\
 SchoolFeeding
 none
 false
 TRACE;DEBUG;NET;NET7_0;NETCOREAPP
-C:\Users\egorb\source\repos\SchoolFeeding\SchoolFeeding\App.xaml
-6-1969598917
+C:\Users\artem\Desktop\DEKKI\SchoolFeeding\App.xaml
+7-1061409781
 
-10-902760140
-226-817512851
-View\LoginView.xaml;View\MainWindow.xaml;View\Pages\AdministratingPage.xaml;View\Pages\MenuPage.xaml;View\Pages\ReportingPage.xaml;View\Pages\UsersInfoPage.xaml;
+231724807230
+2261372104536
+View\LoginView.xaml;View\MainWindow.xaml;View\Pages\AdministratingPage.xaml;View\Pages\MenuPage.xaml;View\Pages\ReportingPage.xaml;View\Pages\UsersInfoPage.xaml;View\Style\NavigationTemplate.xaml;
 
-False
+True
 

@@ -1,0 +1,10 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:viewModel ="clr-namespace:SchoolFeeding.ViewModel"
+                    xmlns:viewWindow ="clr-namespace:SchoolFeeding.View"
+                    xmlns:viewPage="clr-namespace:SchoolFeeding.View.Pages">
+    <DataTemplate DataType="{x:Type viewModel:LoginViewModel}">
+        <viewWindow:LoginView/>
+    </DataTemplate>
+    
+</ResourceDictionary>

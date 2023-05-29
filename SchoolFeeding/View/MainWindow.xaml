@@ -6,15 +6,31 @@
         xmlns:local="clr-namespace:SchoolFeeding"
         xmlns:pages="clr-namespace:SchoolFeeding.View.Pages"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="450" Width="800"
+        ResizeMode="NoResize">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
-            <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-
-        <ContentControl Background="Black"
-                        Content="{Binding }"/>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Menu 
+            HorizontalAlignment="Left" 
+            Margin="5,4,0,4" 
+            Width="45"
+            >
+            <Menu>
+                <MenuItem Header="File">
+                    <MenuItem Header="Back" />
+                    <MenuItem Header="Undo" />
+                    <Separator />
+                    <MenuItem Header="Exit" />
+                </MenuItem>
+            </Menu>
+        </Menu>
+        <ContentControl Content="{Binding }"/>
         <ContentControl 
             Grid.Column="1"
             Content="{Binding Page}"/>

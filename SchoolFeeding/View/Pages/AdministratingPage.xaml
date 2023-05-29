@@ -48,14 +48,14 @@
 
             <Button
                 Background="White"
-                Click="AddStudent"
+                
                 Margin="5"
                 Content="Добавить учащегося"/>
 
             <Button 
                 Background="White"
                 IsEnabled="False"
-                Click="EditStudentInfo"
+                
                 Margin="5"
                 Content="Изменить данные учащегося"/>
 
@@ -76,13 +76,13 @@
 
             <Button
                 Background="White"
-                Click="EditStudentPayment"
+                
                 Margin="5"
                 Content="Редактировать состояние оплаты"/>
 
             <Button
                 Background="White"
-                Click="DeleteStudent"
+                
                 Margin="5 10 5 10"
                 Content="Удалить учащегося"/>
 
@@ -93,7 +93,7 @@
                 <Button
                     Margin="0 0 2 0"
                     Background="White"
-                    Click="SortStudent"
+                    
                     Content="Сортировать по:"/>
 
                 <ComboBox

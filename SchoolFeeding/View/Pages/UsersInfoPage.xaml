@@ -21,27 +21,27 @@
             Grid.Row="1">
 
             <Button
-                Click="AddStudent"
+                
                 Margin="5"
                 Content="Добавить учащегося"/>
 
             <Button
-                Click="EditStudentInfo"
+                
                 Margin="5"
                 Content="Изменить данные учащегося"/>
 
             <Button
-                Click="EditStudentPayment"
+                
                 Margin="5"
                 Content="Редактировать состояние оплаты"/>
 
             <Button
-                Click="DeleteStudent"
+                
                 Margin="5"
                 Content="Удалить учащегося"/>
 
             <Button
-                Click="SortStudent"
+                
                 Margin="5"
                 Content="Сортировать учащихся по:"/>
 

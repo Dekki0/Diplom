@@ -68,3 +68,151 @@ C:\Users\egorb\source\repos\SchoolFeeding\SchoolFeeding\obj\Debug\net7.0-windows
 C:\Users\egorb\source\repos\SchoolFeeding\SchoolFeeding\obj\Debug\net7.0-windows\View\Pages\UsersInfoPage.baml
 C:\Users\egorb\source\repos\SchoolFeeding\SchoolFeeding\obj\Debug\net7.0-windows\View\Pages\AdministratingPage.g.cs
 C:\Users\egorb\source\repos\SchoolFeeding\SchoolFeeding\obj\Debug\net7.0-windows\View\Pages\ReportingPage.g.cs
+D:\Диплом Руслан\Diplom\SchoolFeeding\obj\Debug\net7.0-windows\SchoolFeeding.csproj.AssemblyReference.cache
+D:\Диплом Руслан\Diplom\SchoolFeeding\obj\Debug\net7.0-windows\View\LoginView.g.cs
+D:\Диплом Руслан\Diplom\SchoolFeeding\obj\Debug\net7.0-windows\View\MainWindow.g.cs
+D:\Диплом Руслан\Diplom\SchoolFeeding\obj\Debug\net7.0-windows\View\Pages\AdministratingPage.g.cs
+D:\Диплом Руслан\Diplom\SchoolFeeding\obj\Debug\net7.0-windows\View\Pages\MenuPage.g.cs
+D:\Диплом Руслан\Diplom\SchoolFeeding\obj\Debug\net7.0-windows\View\Pages\ReportingPage.g.cs
+D:\Диплом Руслан\Diplom\SchoolFeeding\obj\Debug\net7.0-windows\View\Pages\UsersInfoPage.g.cs
+D:\Диплом Руслан\Diplom\SchoolFeeding\obj\Debug\net7.0-windows\App.g.cs
+D:\Диплом Руслан\Diplom\SchoolFeeding\obj\Debug\net7.0-windows\SchoolFeeding_MarkupCompile.cache
+D:\Диплом Руслан\Diplom\SchoolFeeding\obj\Debug\net7.0-windows\SchoolFeeding_MarkupCompile.lref
+D:\Диплом Руслан\Diplom\SchoolFeeding\obj\Debug\net7.0-windows\SchoolFeeding.dll
+D:\Диплом Руслан\Diplom\SchoolFeeding\obj\Debug\net7.0-windows\refint\SchoolFeeding.dll
+D:\Диплом Руслан\Diplom\SchoolFeeding\obj\Debug\net7.0-windows\SchoolFeeding.pdb
+D:\Диплом Руслан\Diplom\SchoolFeeding\bin\Debug\net7.0-windows\SchoolFeeding.exe
+D:\Диплом Руслан\Diplom\SchoolFeeding\bin\Debug\net7.0-windows\SchoolFeeding.deps.json
+D:\Диплом Руслан\Diplom\SchoolFeeding\bin\Debug\net7.0-windows\SchoolFeeding.runtimeconfig.json
+D:\Диплом Руслан\Diplom\SchoolFeeding\bin\Debug\net7.0-windows\SchoolFeeding.dll
+D:\Диплом Руслан\Diplom\SchoolFeeding\bin\Debug\net7.0-windows\SchoolFeeding.pdb
+D:\Диплом Руслан\Diplom\SchoolFeeding\bin\Debug\net7.0-windows\Azure.Core.dll
+D:\Диплом Руслан\Diplom\SchoolFeeding\bin\Debug\net7.0-windows\Azure.Identity.dll
+D:\Диплом Руслан\Diplom\SchoolFeeding\bin\Debug\net7.0-windows\Humanizer.dll
+D:\Диплом Руслан\Diplom\SchoolFeeding\bin\Debug\net7.0-windows\Microsoft.Bcl.AsyncInterfaces.dll
+D:\Диплом Руслан\Diplom\SchoolFeeding\bin\Debug\net7.0-windows\Microsoft.Data.SqlClient.dll
+D:\Диплом Руслан\Diplom\SchoolFeeding\bin\Debug\net7.0-windows\Microsoft.EntityFrameworkCore.dll
+D:\Диплом Руслан\Diplom\SchoolFeeding\bin\Debug\net7.0-windows\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\Диплом Руслан\Diplom\SchoolFeeding\bin\Debug\net7.0-windows\Microsoft.EntityFrameworkCore.Design.dll
+D:\Диплом Руслан\Diplom\SchoolFeeding\bin\Debug\net7.0-windows\Microsoft.EntityFrameworkCore.Relational.dll
+D:\Диплом Руслан\Diplom\SchoolFeeding\bin\Debug\net7.0-windows\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\Диплом Руслан\Diplom\SchoolFeeding\bin\Debug\net7.0-windows\Microsoft.Extensions.Caching.Abstractions.dll
+D:\Диплом Руслан\Diplom\SchoolFeeding\bin\Debug\net7.0-windows\Microsoft.Extensions.Caching.Memory.dll
+D:\Диплом Руслан\Diplom\SchoolFeeding\bin\Debug\net7.0-windows\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\Диплом Руслан\Diplom\SchoolFeeding\bin\Debug\net7.0-windows\Microsoft.Extensions.DependencyInjection.dll
+D:\Диплом Руслан\Diplom\SchoolFeeding\bin\Debug\net7.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\Диплом Руслан\Diplom\SchoolFeeding\bin\Debug\net7.0-windows\Microsoft.Extensions.DependencyModel.dll
+D:\Диплом Руслан\Diplom\SchoolFeeding\bin\Debug\net7.0-windows\Microsoft.Extensions.Logging.dll
+D:\Диплом Руслан\Diplom\SchoolFeeding\bin\Debug\net7.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+D:\Диплом Руслан\Diplom\SchoolFeeding\bin\Debug\net7.0-windows\Microsoft.Extensions.Options.dll
+D:\Диплом Руслан\Diplom\SchoolFeeding\bin\Debug\net7.0-windows\Microsoft.Extensions.Primitives.dll
+D:\Диплом Руслан\Diplom\SchoolFeeding\bin\Debug\net7.0-windows\Microsoft.Identity.Client.dll
+D:\Диплом Руслан\Diplom\SchoolFeeding\bin\Debug\net7.0-windows\Microsoft.Identity.Client.Extensions.Msal.dll
+D:\Диплом Руслан\Diplom\SchoolFeeding\bin\Debug\net7.0-windows\Microsoft.IdentityModel.Abstractions.dll
+D:\Диплом Руслан\Diplom\SchoolFeeding\bin\Debug\net7.0-windows\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\Диплом Руслан\Diplom\SchoolFeeding\bin\Debug\net7.0-windows\Microsoft.IdentityModel.Logging.dll
+D:\Диплом Руслан\Diplom\SchoolFeeding\bin\Debug\net7.0-windows\Microsoft.IdentityModel.Protocols.dll
+D:\Диплом Руслан\Diplom\SchoolFeeding\bin\Debug\net7.0-windows\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\Диплом Руслан\Diplom\SchoolFeeding\bin\Debug\net7.0-windows\Microsoft.IdentityModel.Tokens.dll
+D:\Диплом Руслан\Diplom\SchoolFeeding\bin\Debug\net7.0-windows\Microsoft.SqlServer.Server.dll
+D:\Диплом Руслан\Diplom\SchoolFeeding\bin\Debug\net7.0-windows\Mono.TextTemplating.dll
+D:\Диплом Руслан\Diplom\SchoolFeeding\bin\Debug\net7.0-windows\System.IdentityModel.Tokens.Jwt.dll
+D:\Диплом Руслан\Diplom\SchoolFeeding\bin\Debug\net7.0-windows\System.Memory.Data.dll
+D:\Диплом Руслан\Diplom\SchoolFeeding\bin\Debug\net7.0-windows\System.Runtime.Caching.dll
+D:\Диплом Руслан\Diplom\SchoolFeeding\bin\Debug\net7.0-windows\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\Диплом Руслан\Diplom\SchoolFeeding\bin\Debug\net7.0-windows\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\Диплом Руслан\Diplom\SchoolFeeding\bin\Debug\net7.0-windows\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Диплом Руслан\Diplom\SchoolFeeding\bin\Debug\net7.0-windows\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Диплом Руслан\Diplom\SchoolFeeding\bin\Debug\net7.0-windows\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Диплом Руслан\Diplom\SchoolFeeding\bin\Debug\net7.0-windows\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Диплом Руслан\Diplom\SchoolFeeding\bin\Debug\net7.0-windows\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+D:\Диплом Руслан\Diplom\SchoolFeeding\obj\Debug\net7.0-windows\View\LoginView.baml
+D:\Диплом Руслан\Diplom\SchoolFeeding\obj\Debug\net7.0-windows\View\MainWindow.baml
+D:\Диплом Руслан\Diplom\SchoolFeeding\obj\Debug\net7.0-windows\View\Pages\AdministratingPage.baml
+D:\Диплом Руслан\Diplom\SchoolFeeding\obj\Debug\net7.0-windows\View\Pages\MenuPage.baml
+D:\Диплом Руслан\Diplom\SchoolFeeding\obj\Debug\net7.0-windows\View\Pages\ReportingPage.baml
+D:\Диплом Руслан\Diplom\SchoolFeeding\obj\Debug\net7.0-windows\View\Pages\UsersInfoPage.baml
+D:\Диплом Руслан\Diplom\SchoolFeeding\obj\Debug\net7.0-windows\SchoolFeeding.g.resources
+D:\Диплом Руслан\Diplom\SchoolFeeding\obj\Debug\net7.0-windows\SchoolFeeding.GeneratedMSBuildEditorConfig.editorconfig
+D:\Диплом Руслан\Diplom\SchoolFeeding\obj\Debug\net7.0-windows\SchoolFeeding.AssemblyInfoInputs.cache
+D:\Диплом Руслан\Diplom\SchoolFeeding\obj\Debug\net7.0-windows\SchoolFeeding.AssemblyInfo.cs
+D:\Диплом Руслан\Diplom\SchoolFeeding\obj\Debug\net7.0-windows\SchoolFeeding.csproj.CoreCompileInputs.cache
+D:\Диплом Руслан\Diplom\SchoolFeeding\obj\Debug\net7.0-windows\SchoolFeeding.csproj.CopyComplete
+D:\Диплом Руслан\Diplom\SchoolFeeding\obj\Debug\net7.0-windows\SchoolFeeding.genruntimeconfig.cache
+D:\Диплом Руслан\Diplom\SchoolFeeding\obj\Debug\net7.0-windows\ref\SchoolFeeding.dll
+C:\Users\artem\Desktop\DEKKI\SchoolFeeding\bin\Debug\net7.0-windows\SchoolFeeding.exe
+C:\Users\artem\Desktop\DEKKI\SchoolFeeding\bin\Debug\net7.0-windows\SchoolFeeding.deps.json
+C:\Users\artem\Desktop\DEKKI\SchoolFeeding\bin\Debug\net7.0-windows\SchoolFeeding.runtimeconfig.json
+C:\Users\artem\Desktop\DEKKI\SchoolFeeding\bin\Debug\net7.0-windows\SchoolFeeding.dll
+C:\Users\artem\Desktop\DEKKI\SchoolFeeding\bin\Debug\net7.0-windows\SchoolFeeding.pdb
+C:\Users\artem\Desktop\DEKKI\SchoolFeeding\bin\Debug\net7.0-windows\Azure.Core.dll
+C:\Users\artem\Desktop\DEKKI\SchoolFeeding\bin\Debug\net7.0-windows\Azure.Identity.dll
+C:\Users\artem\Desktop\DEKKI\SchoolFeeding\bin\Debug\net7.0-windows\Humanizer.dll
+C:\Users\artem\Desktop\DEKKI\SchoolFeeding\bin\Debug\net7.0-windows\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\artem\Desktop\DEKKI\SchoolFeeding\bin\Debug\net7.0-windows\Microsoft.Data.SqlClient.dll
+C:\Users\artem\Desktop\DEKKI\SchoolFeeding\bin\Debug\net7.0-windows\Microsoft.EntityFrameworkCore.dll
+C:\Users\artem\Desktop\DEKKI\SchoolFeeding\bin\Debug\net7.0-windows\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\artem\Desktop\DEKKI\SchoolFeeding\bin\Debug\net7.0-windows\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\artem\Desktop\DEKKI\SchoolFeeding\bin\Debug\net7.0-windows\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\artem\Desktop\DEKKI\SchoolFeeding\bin\Debug\net7.0-windows\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\artem\Desktop\DEKKI\SchoolFeeding\bin\Debug\net7.0-windows\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\artem\Desktop\DEKKI\SchoolFeeding\bin\Debug\net7.0-windows\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\artem\Desktop\DEKKI\SchoolFeeding\bin\Debug\net7.0-windows\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\artem\Desktop\DEKKI\SchoolFeeding\bin\Debug\net7.0-windows\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\artem\Desktop\DEKKI\SchoolFeeding\bin\Debug\net7.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\artem\Desktop\DEKKI\SchoolFeeding\bin\Debug\net7.0-windows\Microsoft.Extensions.DependencyModel.dll
+C:\Users\artem\Desktop\DEKKI\SchoolFeeding\bin\Debug\net7.0-windows\Microsoft.Extensions.Logging.dll
+C:\Users\artem\Desktop\DEKKI\SchoolFeeding\bin\Debug\net7.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\artem\Desktop\DEKKI\SchoolFeeding\bin\Debug\net7.0-windows\Microsoft.Extensions.Options.dll
+C:\Users\artem\Desktop\DEKKI\SchoolFeeding\bin\Debug\net7.0-windows\Microsoft.Extensions.Primitives.dll
+C:\Users\artem\Desktop\DEKKI\SchoolFeeding\bin\Debug\net7.0-windows\Microsoft.Identity.Client.dll
+C:\Users\artem\Desktop\DEKKI\SchoolFeeding\bin\Debug\net7.0-windows\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\artem\Desktop\DEKKI\SchoolFeeding\bin\Debug\net7.0-windows\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\artem\Desktop\DEKKI\SchoolFeeding\bin\Debug\net7.0-windows\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\artem\Desktop\DEKKI\SchoolFeeding\bin\Debug\net7.0-windows\Microsoft.IdentityModel.Logging.dll
+C:\Users\artem\Desktop\DEKKI\SchoolFeeding\bin\Debug\net7.0-windows\Microsoft.IdentityModel.Protocols.dll
+C:\Users\artem\Desktop\DEKKI\SchoolFeeding\bin\Debug\net7.0-windows\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\artem\Desktop\DEKKI\SchoolFeeding\bin\Debug\net7.0-windows\Microsoft.IdentityModel.Tokens.dll
+C:\Users\artem\Desktop\DEKKI\SchoolFeeding\bin\Debug\net7.0-windows\Microsoft.SqlServer.Server.dll
+C:\Users\artem\Desktop\DEKKI\SchoolFeeding\bin\Debug\net7.0-windows\Mono.TextTemplating.dll
+C:\Users\artem\Desktop\DEKKI\SchoolFeeding\bin\Debug\net7.0-windows\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\artem\Desktop\DEKKI\SchoolFeeding\bin\Debug\net7.0-windows\System.Memory.Data.dll
+C:\Users\artem\Desktop\DEKKI\SchoolFeeding\bin\Debug\net7.0-windows\System.Runtime.Caching.dll
+C:\Users\artem\Desktop\DEKKI\SchoolFeeding\bin\Debug\net7.0-windows\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\artem\Desktop\DEKKI\SchoolFeeding\bin\Debug\net7.0-windows\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\artem\Desktop\DEKKI\SchoolFeeding\bin\Debug\net7.0-windows\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\artem\Desktop\DEKKI\SchoolFeeding\bin\Debug\net7.0-windows\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\artem\Desktop\DEKKI\SchoolFeeding\bin\Debug\net7.0-windows\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\artem\Desktop\DEKKI\SchoolFeeding\bin\Debug\net7.0-windows\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\artem\Desktop\DEKKI\SchoolFeeding\bin\Debug\net7.0-windows\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\Users\artem\Desktop\DEKKI\SchoolFeeding\obj\Debug\net7.0-windows\SchoolFeeding.csproj.AssemblyReference.cache
+C:\Users\artem\Desktop\DEKKI\SchoolFeeding\obj\Debug\net7.0-windows\View\LoginView.g.cs
+C:\Users\artem\Desktop\DEKKI\SchoolFeeding\obj\Debug\net7.0-windows\View\MainWindow.g.cs
+C:\Users\artem\Desktop\DEKKI\SchoolFeeding\obj\Debug\net7.0-windows\View\Pages\AdministratingPage.g.cs
+C:\Users\artem\Desktop\DEKKI\SchoolFeeding\obj\Debug\net7.0-windows\View\Pages\MenuPage.g.cs
+C:\Users\artem\Desktop\DEKKI\SchoolFeeding\obj\Debug\net7.0-windows\View\Pages\ReportingPage.g.cs
+C:\Users\artem\Desktop\DEKKI\SchoolFeeding\obj\Debug\net7.0-windows\View\Pages\UsersInfoPage.g.cs
+C:\Users\artem\Desktop\DEKKI\SchoolFeeding\obj\Debug\net7.0-windows\App.g.cs
+C:\Users\artem\Desktop\DEKKI\SchoolFeeding\obj\Debug\net7.0-windows\SchoolFeeding_MarkupCompile.cache
+C:\Users\artem\Desktop\DEKKI\SchoolFeeding\obj\Debug\net7.0-windows\SchoolFeeding_MarkupCompile.lref
+C:\Users\artem\Desktop\DEKKI\SchoolFeeding\obj\Debug\net7.0-windows\View\LoginView.baml
+C:\Users\artem\Desktop\DEKKI\SchoolFeeding\obj\Debug\net7.0-windows\View\MainWindow.baml
+C:\Users\artem\Desktop\DEKKI\SchoolFeeding\obj\Debug\net7.0-windows\View\Pages\AdministratingPage.baml
+C:\Users\artem\Desktop\DEKKI\SchoolFeeding\obj\Debug\net7.0-windows\View\Pages\MenuPage.baml
+C:\Users\artem\Desktop\DEKKI\SchoolFeeding\obj\Debug\net7.0-windows\View\Pages\ReportingPage.baml
+C:\Users\artem\Desktop\DEKKI\SchoolFeeding\obj\Debug\net7.0-windows\View\Pages\UsersInfoPage.baml
+C:\Users\artem\Desktop\DEKKI\SchoolFeeding\obj\Debug\net7.0-windows\SchoolFeeding.g.resources
+C:\Users\artem\Desktop\DEKKI\SchoolFeeding\obj\Debug\net7.0-windows\SchoolFeeding.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\artem\Desktop\DEKKI\SchoolFeeding\obj\Debug\net7.0-windows\SchoolFeeding.AssemblyInfoInputs.cache
+C:\Users\artem\Desktop\DEKKI\SchoolFeeding\obj\Debug\net7.0-windows\SchoolFeeding.AssemblyInfo.cs
+C:\Users\artem\Desktop\DEKKI\SchoolFeeding\obj\Debug\net7.0-windows\SchoolFeeding.csproj.CoreCompileInputs.cache
+C:\Users\artem\Desktop\DEKKI\SchoolFeeding\obj\Debug\net7.0-windows\SchoolFeeding.csproj.CopyComplete
+C:\Users\artem\Desktop\DEKKI\SchoolFeeding\obj\Debug\net7.0-windows\SchoolFeeding.dll
+C:\Users\artem\Desktop\DEKKI\SchoolFeeding\obj\Debug\net7.0-windows\refint\SchoolFeeding.dll
+C:\Users\artem\Desktop\DEKKI\SchoolFeeding\obj\Debug\net7.0-windows\SchoolFeeding.pdb
+C:\Users\artem\Desktop\DEKKI\SchoolFeeding\obj\Debug\net7.0-windows\SchoolFeeding.genruntimeconfig.cache
+C:\Users\artem\Desktop\DEKKI\SchoolFeeding\obj\Debug\net7.0-windows\ref\SchoolFeeding.dll
+C:\Users\artem\Desktop\DEKKI\SchoolFeeding\bin\Debug\net7.0-windows\SchoolFeeding.dll.config
+C:\Users\artem\Desktop\DEKKI\SchoolFeeding\obj\Debug\net7.0-windows\GeneratedInternalTypeHelper.g.cs
+C:\Users\artem\Desktop\DEKKI\SchoolFeeding\obj\Debug\net7.0-windows\App.baml
+C:\Users\artem\Desktop\DEKKI\SchoolFeeding\obj\Debug\net7.0-windows\View\Style\NavigationTemplate.baml

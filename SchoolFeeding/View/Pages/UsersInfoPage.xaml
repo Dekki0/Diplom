@@ -5,55 +5,18 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:SchoolFeeding.View.Pages"
              mc:Ignorable="d" 
-             d:DesignHeight="450" d:DesignWidth="900">
+             d:DesignHeight="450" d:DesignWidth="800">
     <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="400"/>
-            <RowDefinition Height="50"/>
-        </Grid.RowDefinitions>
-
-        <DataGrid
-            Grid.ColumnSpan="5"/>
-        
-        <StackPanel
-            HorizontalAlignment="Stretch"
-            Orientation ="Vertical"
-            Grid.Row="1">
-
-            <Button
-                
-                Margin="5"
-                Content="Добавить учащегося"/>
-
-            <Button
-                
-                Margin="5"
-                Content="Изменить данные учащегося"/>
-
-            <Button
-                
-                Margin="5"
-                Content="Редактировать состояние оплаты"/>
-
-            <Button
-                
-                Margin="5"
-                Content="Удалить учащегося"/>
-
-            <Button
-                
-                Margin="5"
-                Content="Сортировать учащихся по:"/>
-
-            <ComboBox
-                Margin="5"
-                ItemsSource="{Binding YourCollection}"
-                DisplayMemberPath="PropertyNameToDisplay"
-                SelectedValuePath="PropertyNameToUseAsValue"
-                SelectedValue="{Binding SelectedItemProperty}" />
-            
-        </StackPanel>
-
+        <DataGrid 
+            IsReadOnly="True" 
+            ItemsSource="{Binding PaymentsData}"
+            AutoGenerateColumns="False"
+            FontSize="40"
+            >
+            <DataGrid.Columns>
+                <DataGridTextColumn CanUserResize="False" FontSize="40" Header="Уплачено" Binding="{Binding Amount}"/>
+                <DataGridTextColumn CanUserResize="False" FontSize="40" Header="Дата оплаты" Binding="{Binding PaymentDate}"/>
+            </DataGrid.Columns>
+        </DataGrid>
     </Grid>
-    
 </UserControl>

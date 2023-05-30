@@ -12,4 +12,5 @@ public partial class Class
     public byte ClassCode { get; set; }
 
     public virtual ICollection<Student> Students { get; set; } = new List<Student>();
+    public override string ToString() => $"{ClassCode}{ClassName}";
 }

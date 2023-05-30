@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SchoolFeeding.Model.Entities;
+using System;
 using System.Collections.Generic;
 using System.Configuration;
 using System.Linq;
@@ -9,6 +10,8 @@ namespace SchoolFeeding.Model.Utilities
 {
     public record Configure
     {
+        public static User CurrentUser { get; set; }
+
         public static object GetParametr(string Parametr) =>
             ConfigurationManager.AppSettings[Parametr]??"undefined";
         public static void SetParametr(string Parametr, object value)

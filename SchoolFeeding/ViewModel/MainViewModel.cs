@@ -14,16 +14,31 @@ namespace SchoolFeeding.ViewModel
 {
     public class MainViewModel : ViewModelBase
     {
+        #region private varible
+
+        private object? page;
+        
+        
+        #endregion
+
         #region public block
-        public object Page { get; set; }
+        public object Page 
+        {
+            get => page??new MenuViewModel();
+            private set => SetProperty(ref page, value, nameof(Page)); 
+        }
+        public ICommand BackPageCommand { get; }
         public MainViewModel()
         {
             StackControl.DataChanged += HandleDataChanged;
-            Page = new MenuViewModel();
+            StackControl.AddPage(new MenuViewModel());
+            BackPageCommand = new RelayCommand<object>(BackPage);
         }
+
         #endregion
 
         #region private methods
+        private void BackPage(object args) => Page=StackControl.GetPage()??new MenuViewModel();
         private void HandleDataChanged(object newData) => Page = newData;
         #endregion 
     }

@@ -3,17 +3,20 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-             xmlns:local="clr-namespace:SchoolFeeding.View.Pages"
+             xmlns:local="clr-namespace:SchoolFeeding.Model.Utilities"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
+    <UserControl.Resources>
+        <local:VisibilityConverter x:Key="VisibilityConverter"/>
+    </UserControl.Resources>
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="600"/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
 
-        <DataGrid
-            Grid.ColumnSpan="5"/>
+        <DataGrid IsReadOnly="True" ItemsSource="{Binding DataCollection}" SelectedItem="{Binding SelectedItem}"/>
+
 
         <StackPanel
             Background="Wheat"
@@ -32,29 +35,35 @@
                 <StackPanel Margin="5"
                     Orientation="Horizontal">
                     <Label Content="Имя:"/>
-                    <TextBox Width="144"/>
+                    <TextBox Width="144"
+                             Text="{Binding FirstName}"
+                             MaxLength="10"/>
                 </StackPanel>
                 <StackPanel Margin="5"
                     Orientation="Horizontal">
                     <Label Content="Фамилия:"/>
-                    <TextBox Width="117"/>
+                    <TextBox Width="117"
+                             Text="{Binding LastName}"
+                             MaxLength="10"/>
                 </StackPanel>
                 <StackPanel Margin="5 5 5 10"
                     Orientation="Horizontal">
                     <Label Content="Класс:"/>
-                    <TextBox Width="136"/>
+                    <TextBox Width="136"
+                             Text="{Binding Class}"
+                             MaxLength="3"/>
                 </StackPanel>
             </StackPanel>
 
             <Button
                 Background="White"
-                
+                IsEnabled="{Binding IsAdd}"
                 Margin="5"
                 Content="Добавить учащегося"/>
 
             <Button 
                 Background="White"
-                IsEnabled="False"
+                IsEnabled="{Binding IsChange}"
                 
                 Margin="5"
                 Content="Изменить данные учащегося"/>

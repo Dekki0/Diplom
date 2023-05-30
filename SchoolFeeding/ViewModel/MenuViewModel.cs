@@ -1,5 +1,6 @@
 ﻿using SchoolFeeding.Model.Utilities;
 using SchoolFeeding.View;
+using SchoolFeeding.View.Pages;
 using SchoolFeeding.ViewModel.Services;
 using System;
 using System.Collections.Generic;
@@ -29,8 +30,8 @@ namespace SchoolFeeding.ViewModel
             _windowService = new WindowService();
             MenuCommand = new RelayCommand<object>[3]
             {
-              new RelayCommand<object>(Logout),
-              new RelayCommand<object>(Logout),
+              new RelayCommand<object>(Info),
+              new RelayCommand<object>(Admin),
               new RelayCommand<object>(Logout)
             };
             if (Configure.GetParametr("CurrentRole").Equals("Админ"))
@@ -44,6 +45,8 @@ namespace SchoolFeeding.ViewModel
             if (MessageBox.Show("Вы точно хотите выйти?", "Выход", MessageBoxButton.YesNo, MessageBoxImage.Question) == MessageBoxResult.Yes)
                 _windowService.OpenWindow(new LoginView(), true);
         }
+        private void Info(object args) => StackControl.AddPage(new InfoViewModel());
+        private void Admin(object args) => StackControl.AddPage(new AdminViewModel());
         #endregion
     }
 }

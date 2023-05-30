@@ -24,10 +24,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Model\Dto\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <EditorConfigFiles Remove="C:\Users\artem\Desktop\DEKKI\SchoolFeeding\.editorconfig" />
   </ItemGroup>
 

@@ -57,7 +57,7 @@ namespace SchoolFeeding.ViewModel
 			{
 				var User = _Context.Users.First(user => user.Login.Equals(Login) && user.Password.Equals(Password));
                 Configure.SetParametr("CurrentRole", User.Role);
-                Configure.SetParametr("CurrentUser", User.Login);
+                Configure.CurrentUser = User;
                 Console.WriteLine($"User: {User.Login}\nRole: {User.Role}");
 				MessageBox.Show("Авторизация успешна","Succes",MessageBoxButton.OK,MessageBoxImage.Asterisk);
                 _windowService.OpenWindow(new MainWindow(), true);

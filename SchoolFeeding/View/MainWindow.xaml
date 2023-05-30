@@ -14,13 +14,35 @@
     </Window.DataContext>
 
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
         <Menu 
             HorizontalAlignment="Left" 
-            Margin="5,4,0,4" 
-            Width="45"
-            />
+            Margin="5,5,0,5" 
+            Width="90"
+            Height="20"
+            Grid.Row="0">
+            <MenuItem Height="20" 
+                      Width="45"
+                      Header="Файл"
+                      HorizontalContentAlignment="Center"
+                      >
+
+            </MenuItem>
+            
+            <MenuItem Height="20" 
+                      Width="45"
+                      Header="Назад"
+                      HorizontalContentAlignment="Center"
+                      Command="{Binding BackPageCommand}">
+
+            </MenuItem>
+        </Menu>
         <ContentControl
-            Content="{Binding Page}"/>
+            Content="{Binding Page}"
+            Grid.Row="1"/>
 
     </Grid>
 </Window>

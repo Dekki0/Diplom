@@ -12,4 +12,10 @@
     <DataTemplate DataType="{x:Type viewModel:MenuViewModel}">
         <viewPage:MenuPage/>
     </DataTemplate>
+    <DataTemplate DataType="{x:Type viewModel:InfoViewModel}">
+        <viewPage:UsersInfoPage/>
+    </DataTemplate>
+    <DataTemplate DataType="{x:Type viewModel:AdminViewModel}">
+        <viewPage:AdministratingPage/>
+    </DataTemplate>
 </ResourceDictionary>

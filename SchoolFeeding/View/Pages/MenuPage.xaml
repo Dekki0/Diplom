@@ -22,7 +22,8 @@
         <Button 
             Margin="250 20 250 20"
             FontSize="20"
-            Content="Просмотр информации"/>
+            Content="Просмотр информации"
+            Command="{Binding MenuCommand[0]}"/>
         <Button
             Margin="250 20 250 20"
             FontSize="20"
@@ -34,6 +35,7 @@
             FontSize="20"
             Grid.Row="3"
             Content="Администрирование"
+            Command="{Binding MenuCommand[1]}"
             Visibility="{Binding IsButtonVisible, Converter={StaticResource VisibilityConverter}}"/>
 
         <Button

@@ -44,6 +44,7 @@ namespace SchoolFeeding.ViewModel
         {
             if (MessageBox.Show("Вы точно хотите выйти?", "Выход", MessageBoxButton.YesNo, MessageBoxImage.Question) == MessageBoxResult.Yes)
                 _windowService.OpenWindow(new LoginView(), true);
+            StackControl.Clear();
         }
         private void Info(object args) => StackControl.AddPage(new InfoViewModel());
         private void Admin(object args) => StackControl.AddPage(new AdminViewModel());

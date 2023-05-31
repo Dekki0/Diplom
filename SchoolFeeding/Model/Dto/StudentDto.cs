@@ -15,6 +15,8 @@ namespace SchoolFeeding.Model.Dto
         public string Имя { get; set; }
         public string Фамилия { get; set; }
         public Class Класс { get; set; }
+        public Balance Баланс { get; set; }
+        private Student referenceObj;
 
         public StudentDto(Student student) 
         {
@@ -23,10 +25,16 @@ namespace SchoolFeeding.Model.Dto
             Имя = student.FirstName;
             Фамилия = student.LastName;
             Класс = context.Classes.Where(x=>x.ClassId.Equals(student.ClassId)).First();
+            referenceObj = student;
+            Баланс = context.Balances.Where(x => x.StudentId.Equals(student.StudentId)).FirstOrDefault()?? new Balance() { Balance1 = 0 };
         }
         public StudentDto()
         {
 
         }
+        public int GetId() =>
+            Id;
+        public Student GetReferenceObject() =>
+            referenceObj;
     }
 }

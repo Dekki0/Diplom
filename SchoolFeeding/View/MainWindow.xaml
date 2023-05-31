@@ -43,6 +43,6 @@
         <ContentControl
             Content="{Binding Page}"
             Grid.Row="1"/>
-
+        <Label HorizontalAlignment="Right" VerticalAlignment="Top" FontSize="30" Content="{Binding Balance}"/>
     </Grid>
 </Window>

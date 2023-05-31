@@ -15,7 +15,9 @@
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
 
-        <DataGrid IsReadOnly="True" ItemsSource="{Binding DataCollection}" SelectedItem="{Binding SelectedItem}"/>
+        <DataGrid IsReadOnly="True" 
+                  ItemsSource="{Binding DataCollection}" 
+                  SelectedItem="{Binding SelectedItem}"/>
 
 
         <StackPanel
@@ -27,29 +29,32 @@
             <StackPanel 
                 Margin="5"
                 Background="AntiqueWhite"
-                Orientation="Vertical">
+                Orientation="Vertical" Height="120">
 
                 <Label
                     HorizontalAlignment="Center"
                     Content="Информация об обущающемся:"/>
-                <StackPanel Margin="5"
+                <StackPanel Margin="2"
                     Orientation="Horizontal">
                     <Label Content="Имя:"/>
-                    <TextBox Width="144"
+                    <TextBox Width="124"
+                             Height="25"
                              Text="{Binding FirstName}"
-                             MaxLength="10"/>
+                             MaxLength="20"/>
                 </StackPanel>
-                <StackPanel Margin="5"
+                <StackPanel Margin="2"
                     Orientation="Horizontal">
                     <Label Content="Фамилия:"/>
-                    <TextBox Width="117"
+                    <TextBox Width="100"
+                             Height="25"
                              Text="{Binding LastName}"
-                             MaxLength="10"/>
+                             MaxLength="20"/>
                 </StackPanel>
-                <StackPanel Margin="5 5 5 10"
+                <StackPanel Margin="2 2 2 0"
                     Orientation="Horizontal">
                     <Label Content="Класс:"/>
-                    <TextBox Width="136"
+                    <TextBox Width="120"
+                             Height="25"
                              Text="{Binding Class}"
                              MaxLength="3"/>
                 </StackPanel>
@@ -57,14 +62,16 @@
 
             <Button
                 Background="White"
-                IsEnabled="{Binding IsAdd}"
+                Visibility="{Binding IsAdd,Converter={StaticResource VisibilityConverter}}"
                 Margin="5"
-                Content="Добавить учащегося"/>
+                Command="{Binding StudentAddCommand}"
+                Content="Добавить учащегося"
+                />
 
             <Button 
                 Background="White"
-                IsEnabled="{Binding IsChange}"
-                
+                Visibility="{Binding IsChange, Converter={StaticResource VisibilityConverter}}"
+                Command="{Binding StudentChangeCommand}"
                 Margin="5"
                 Content="Изменить данные учащегося"/>
 
@@ -78,8 +85,8 @@
                     Content="Информация об оплате:"/>
                 <StackPanel Margin="5"
                     Orientation="Horizontal">
-                    <Label Content="Изменить на:"/>
-                    <TextBox Width="97" Text=""/>
+                    <Label Content="Уплачено:"/>
+                    <TextBox Width="100" Height="25" Text=""/>
                 </StackPanel>
             </StackPanel>
 
@@ -91,7 +98,7 @@
 
             <Button
                 Background="White"
-                
+                Command="{Binding StudentDeleteCommand}"
                 Margin="5 10 5 10"
                 Content="Удалить учащегося"/>
 

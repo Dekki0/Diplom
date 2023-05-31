@@ -34,6 +34,7 @@ namespace SchoolFeeding.ViewModel.Services
             Pages.Push(page);
             DataChanged?.Invoke(page);
         }
+        public static void Clear()=>Pages.Clear();
         #endregion
     }
 }

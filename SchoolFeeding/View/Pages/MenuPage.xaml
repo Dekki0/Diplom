@@ -28,7 +28,8 @@
             Margin="250 20 250 20"
             FontSize="20"
             Grid.Row="1"
-            Content="Отчётность" />
+            Content="Отчётность" 
+            Command="{Binding MenuCommand[2]}"/>
         
         <Button
             Margin="250 20 250 20"
@@ -49,6 +50,6 @@
             FontSize="20"
             Grid.Row="4"
             Content="Выход"
-            Command="{Binding MenuCommand[2]}"/>
+            Command="{Binding MenuCommand[3]}"/>
     </Grid>
 </UserControl>

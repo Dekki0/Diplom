@@ -28,10 +28,11 @@ namespace SchoolFeeding.ViewModel
         public MenuViewModel() 
         {
             _windowService = new WindowService();
-            MenuCommand = new RelayCommand<object>[3]
+            MenuCommand = new RelayCommand<object>[4]
             {
               new RelayCommand<object>(Info),
               new RelayCommand<object>(Admin),
+              new RelayCommand<object>(Report),
               new RelayCommand<object>(Logout)
             };
             if (Configure.GetParametr("CurrentRole").Equals("Админ"))
@@ -48,6 +49,7 @@ namespace SchoolFeeding.ViewModel
         }
         private void Info(object args) => StackControl.AddPage(new InfoViewModel());
         private void Admin(object args) => StackControl.AddPage(new AdminViewModel());
+        private void Report(object args) => StackControl.AddPage(new ReportViewModel());
         #endregion
     }
 }

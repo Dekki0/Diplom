@@ -4,16 +4,16 @@
 exe
 C#
 .cs
-C:\Users\artem\Desktop\DEKKI\SchoolFeeding\obj\Debug\net7.0-windows\
+C:\Users\egorb\source\repos\SchoolFeeding\SchoolFeeding\obj\Debug\net7.0-windows\
 SchoolFeeding
 none
 false
 TRACE;DEBUG;NET;NET7_0;NETCOREAPP
-C:\Users\artem\Desktop\DEKKI\SchoolFeeding\App.xaml
+C:\Users\egorb\source\repos\SchoolFeeding\SchoolFeeding\App.xaml
 7-1061409781
 
-30822560841
-2261372104536
+31-278007162
+2271886636558
 View\LoginView.xaml;View\MainWindow.xaml;View\Pages\AdministratingPage.xaml;View\Pages\MenuPage.xaml;View\Pages\ReportingPage.xaml;View\Pages\UsersInfoPage.xaml;View\Style\NavigationTemplate.xaml;
 
 False

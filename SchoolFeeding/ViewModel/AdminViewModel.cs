@@ -129,15 +129,16 @@ namespace SchoolFeeding.ViewModel
                     _context.Students.Remove(student);
 
                     _context.SaveChanges();
+                    var list = new List<StudentDto>();
+                    foreach (var item in _context.Students.Select(x => x).ToList())
+                        list.Add(new StudentDto(item));
+                    list.Add(new StudentDto() { Id = -1 });
+                    DataCollection = new(list);
                 }
                 catch (Exception e)
                 {
                     Logger.LogError(e.Message);
                 }
-            else 
-            {
-                return;
-            }
         }
         private void AddStudent(object args)
         {

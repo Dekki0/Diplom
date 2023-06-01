@@ -216,3 +216,10 @@ C:\Users\artem\Desktop\DEKKI\SchoolFeeding\bin\Debug\net7.0-windows\SchoolFeedin
 C:\Users\artem\Desktop\DEKKI\SchoolFeeding\obj\Debug\net7.0-windows\GeneratedInternalTypeHelper.g.cs
 C:\Users\artem\Desktop\DEKKI\SchoolFeeding\obj\Debug\net7.0-windows\App.baml
 C:\Users\artem\Desktop\DEKKI\SchoolFeeding\obj\Debug\net7.0-windows\View\Style\NavigationTemplate.baml
+C:\Users\egorb\source\repos\SchoolFeeding\SchoolFeeding\obj\Debug\net7.0-windows\GeneratedInternalTypeHelper.g.cs
+C:\Users\egorb\source\repos\SchoolFeeding\SchoolFeeding\bin\Debug\net7.0-windows\SchoolFeeding.dll.config
+C:\Users\egorb\source\repos\SchoolFeeding\SchoolFeeding\bin\Debug\net7.0-windows\DocumentFormat.OpenXml.dll
+C:\Users\egorb\source\repos\SchoolFeeding\SchoolFeeding\obj\Debug\net7.0-windows\App.baml
+C:\Users\egorb\source\repos\SchoolFeeding\SchoolFeeding\obj\Debug\net7.0-windows\View\Pages\AdministratingPage.baml
+C:\Users\egorb\source\repos\SchoolFeeding\SchoolFeeding\obj\Debug\net7.0-windows\View\Pages\ReportingPage.baml
+C:\Users\egorb\source\repos\SchoolFeeding\SchoolFeeding\obj\Debug\net7.0-windows\View\Style\NavigationTemplate.baml

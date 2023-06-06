@@ -27,6 +27,7 @@ namespace SchoolFeeding.ViewModel
         #region constructor
         public MenuViewModel() 
         {
+
             _windowService = new WindowService();
             MenuCommand = new RelayCommand<object>[4]
             {

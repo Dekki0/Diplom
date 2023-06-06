@@ -86,7 +86,7 @@
                 <StackPanel Margin="5"
                     Orientation="Horizontal">
                     <Label Content="Уплачено:"/>
-                    <TextBox Width="100" Height="25" Text=""/>
+                    <TextBox Width="100" Height="25" Text="{Binding Summ}"/>
                 </StackPanel>
             </StackPanel>
 
@@ -94,7 +94,8 @@
                 Background="White"
                 
                 Margin="5"
-                Content="Редактировать состояние оплаты"/>
+                Content="Редактировать состояние оплаты"
+                Command="{Binding SummCommand}"/>
 
             <Button
                 Background="White"
@@ -106,19 +107,7 @@
                 Margin="5 20 5 10"
                 Orientation ="Horizontal">
 
-                <Button
-                    Margin="0 0 2 0"
-                    Background="White"
-                    
-                    Content="Сортировать по:"/>
-
-                <ComboBox
-                    Margin="2 0 0 0"
-                    Background="White"
-                    ItemsSource="{Binding YourCollection}"
-                    DisplayMemberPath="PropertyNameToDisplay"
-                    SelectedValuePath="PropertyNameToUseAsValue"
-                    SelectedValue="{Binding SelectedItemProperty}" Width="95" />
+                
                 
             </StackPanel>
         </StackPanel>

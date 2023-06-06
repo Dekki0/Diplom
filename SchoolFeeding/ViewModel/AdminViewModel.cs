@@ -85,16 +85,21 @@ namespace SchoolFeeding.ViewModel
             set { SetProperty(ref isChange, value, nameof(IsChange)); }
         }
         private bool isAdd;
-
         public bool IsAdd
         {
             get { return isAdd; }
             set { SetProperty(ref isAdd, value, nameof(IsAdd)); }
         }
-
+        private string summ;
+        public string Summ
+        {
+            get => summ;
+            set => SetProperty(ref summ, value, nameof(Summ));
+        }
         public ICommand StudentChangeCommand { get; }
         public ICommand StudentAddCommand { get; }
         public ICommand StudentDeleteCommand { get; }
+        public ICommand SummCommand { get; }
         public AdminViewModel()
         {
             _context = new();
@@ -106,8 +111,45 @@ namespace SchoolFeeding.ViewModel
             StudentChangeCommand = new RelayCommand<object>(ChangeStudent);
             StudentAddCommand = new RelayCommand<object>(AddStudent);
             StudentDeleteCommand = new RelayCommand<object>(DeleteStudent);
+            SummCommand = new RelayCommand<object>(SummMethod);
             IsAdd = false;
             IsChange = false;
+        }
+        private void SummMethod(object args)
+        {
+            try
+            {
+                bool isDouble = IsDouble(Summ);
+                if (isDouble)
+                {
+                    var student = _context.Students.Find((ControlObj as Student).StudentId);
+                    var balance = _context.Balances.First(x => x.StudentId == student.StudentId);
+                    balance.Balance1 = balance.Balance1 + Convert.ToDecimal(Summ);
+                    _context.SaveChanges();
+                    MessageBox.Show("Оплата успешно внесена");
+                    var list = new List<StudentDto>();
+                    foreach (var item in _context.Students.Select(x => x).ToList())
+                        list.Add(new StudentDto(item));
+                    list.Add(new StudentDto() { Id = -1 });
+                    DataCollection = new(list);
+                }
+                else
+                {
+                    MessageBox.Show("Введенная строка не числом.");
+                }
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            
+        }
+        private bool IsDouble(string input)
+        {
+            if (double.TryParse(input, out double result))
+                return true;
+            else
+                return false;
         }
         private void DeleteStudent(object args)
         {
@@ -156,8 +198,12 @@ namespace SchoolFeeding.ViewModel
                         FirstName = FirstName,
                         LastName = LastName,
                         ClassId = GetClass(),
+                        Balance = new Balance()
                     });
+                    
                 }
+                _context.SaveChanges();
+                
                 _context.SaveChanges();
                 var list = new List<StudentDto>();
                 foreach (var item in _context.Students.Select(x => x).ToList())

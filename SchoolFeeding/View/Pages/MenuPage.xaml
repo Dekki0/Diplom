@@ -27,10 +27,11 @@
         <Button
             Margin="250 20 250 20"
             FontSize="20"
-            Grid.Row="1"
+            Grid.Row="2"
             Content="Отчётность" 
-            Command="{Binding MenuCommand[2]}"/>
-        
+            Command="{Binding MenuCommand[2]}"
+            Visibility="{Binding IsButtonVisible, Converter={StaticResource VisibilityConverter}}"/>
+
         <Button
             Margin="250 20 250 20"
             FontSize="20"
@@ -42,7 +43,7 @@
         <Button
             Margin="250 20 250 20"
             FontSize="20"
-            Grid.Row="2"
+            Grid.Row="1"
             Content="Справка"/>
         
         <Button 

@@ -223,3 +223,14 @@ C:\Users\egorb\source\repos\SchoolFeeding\SchoolFeeding\obj\Debug\net7.0-windows
 C:\Users\egorb\source\repos\SchoolFeeding\SchoolFeeding\obj\Debug\net7.0-windows\View\Pages\AdministratingPage.baml
 C:\Users\egorb\source\repos\SchoolFeeding\SchoolFeeding\obj\Debug\net7.0-windows\View\Pages\ReportingPage.baml
 C:\Users\egorb\source\repos\SchoolFeeding\SchoolFeeding\obj\Debug\net7.0-windows\View\Style\NavigationTemplate.baml
+C:\Users\artem\Desktop\DEKKI\SchoolFeeding\bin\Debug\net7.0-windows\DocumentFormat.OpenXml.dll
+C:\Users\artem\Desktop\DEKKI\SchoolFeeding\bin\Debug\net7.0-windows\EPPlus.dll
+C:\Users\artem\Desktop\DEKKI\SchoolFeeding\bin\Debug\net7.0-windows\EPPlus.Interfaces.dll
+C:\Users\artem\Desktop\DEKKI\SchoolFeeding\bin\Debug\net7.0-windows\EPPlus.System.Drawing.dll
+C:\Users\artem\Desktop\DEKKI\SchoolFeeding\bin\Debug\net7.0-windows\Microsoft.Extensions.Configuration.dll
+C:\Users\artem\Desktop\DEKKI\SchoolFeeding\bin\Debug\net7.0-windows\Microsoft.Extensions.Configuration.FileExtensions.dll
+C:\Users\artem\Desktop\DEKKI\SchoolFeeding\bin\Debug\net7.0-windows\Microsoft.Extensions.Configuration.Json.dll
+C:\Users\artem\Desktop\DEKKI\SchoolFeeding\bin\Debug\net7.0-windows\Microsoft.Extensions.FileProviders.Abstractions.dll
+C:\Users\artem\Desktop\DEKKI\SchoolFeeding\bin\Debug\net7.0-windows\Microsoft.Extensions.FileProviders.Physical.dll
+C:\Users\artem\Desktop\DEKKI\SchoolFeeding\bin\Debug\net7.0-windows\Microsoft.Extensions.FileSystemGlobbing.dll
+C:\Users\artem\Desktop\DEKKI\SchoolFeeding\bin\Debug\net7.0-windows\Microsoft.IO.RecyclableMemoryStream.dll

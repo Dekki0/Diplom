@@ -4,58 +4,26 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:SchoolFeeding.View.Pages"
+             xmlns:viewModel="clr-namespace:SchoolFeeding.ViewModel"
               xmlns:utilities="clr-namespace:SchoolFeeding.Model.Utilities"
              mc:Ignorable="d" Height="193" Width="370">
     <StackPanel 
         Orientation="Vertical">
 
-        <Grid Margin="10">
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition/>
-                <ColumnDefinition/>
-            </Grid.ColumnDefinitions>
-            <Grid.RowDefinitions>
-                <RowDefinition/>
-                <RowDefinition/>
-            </Grid.RowDefinitions>
-
-            <Label
-                HorizontalAlignment="Center"
-                Content="Выберите начала отчётности:"/>
-
-            <DatePicker
-                Grid.Row="1"/>
-
-            <Label
-                Grid.Column ="1"
-                HorizontalAlignment="Center"
-                Content="Выберите начала отчётности:"/>
-
-            <DatePicker
-                Grid.Column ="1"
-                Grid.Row="1"/>
-
-        </Grid>
+        
 
 
         <StackPanel Margin="10"
             HorizontalAlignment="Center"
-            Orientation="Horizontal">
-            <Label
-            HorizontalAlignment="Center"
-            Content="Выберите формат:"/>
+            Orientation="Horizontal"/>
 
-            <ComboBox
-                ItemsSource="{Binding YourCollection}"
-                DisplayMemberPath="PropertyNameToDisplay"
-                SelectedValuePath="PropertyNameToUseAsValue"
-                SelectedValue="{Binding SelectedItemProperty}" Width="180" />
-
-        </StackPanel>
-        
         <StackPanel Margin="10">
             <Button Margin="10"
-                Content="Создать отчёт" Height="34"/>
+                Content="Создать отчёт за 1 месяц" Height="34"
+                    Command="{Binding ReportingOneCommand}"/>
+            <Button Margin="10"
+                Content="Создать отчёт за 3 месяц" Height="34"
+                    Command="{Binding ReportingThreeCommand}"/>
         </StackPanel>
         
     </StackPanel>

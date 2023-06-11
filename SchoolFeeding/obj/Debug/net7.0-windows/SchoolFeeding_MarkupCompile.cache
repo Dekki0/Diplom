@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET7_0;NETCOREAPP
 C:\Users\artem\Desktop\DEKKI\SchoolFeeding\App.xaml
-7-1061409781
+81862489051
 
-31-278007162
+35-1017004606
 2381731559225
-View\LoginView.xaml;View\MainWindow.xaml;View\Pages\AdministratingPage.xaml;View\Pages\MenuPage.xaml;View\Pages\ReportingPage.xaml;View\Pages\UsersInfoPage.xaml;View\Style\NavigationTemplate.xaml;
+View\LoginView.xaml;View\MainWindow.xaml;View\Pages\AdministratingPage.xaml;View\Pages\MenuPage.xaml;View\Pages\ReportingPage.xaml;View\Pages\UsersInfoPage.xaml;View\Pages\VisitStudent.xaml;View\Style\NavigationTemplate.xaml;
 
 False
 

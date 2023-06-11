@@ -66,8 +66,9 @@ namespace SchoolFeeding.ViewModel
                 worksheet.Cells[1, 1].Value = "Имя";
                 worksheet.Cells[1, 2].Value = "Фамилия";
                 worksheet.Cells[1, 3].Value = "Класс";
-                worksheet.Cells[1, 4].Value = "Дата оплаты";
-                worksheet.Cells[1, 5].Value = "Сумма оплаты";
+                worksheet.Cells[1, 4].Value = "Дата";
+                worksheet.Cells[1, 5].Value = "Общий минус";
+                worksheet.Cells[1, 6].Value = "Баланс";
 
                 int row = 2;
 
@@ -82,23 +83,26 @@ namespace SchoolFeeding.ViewModel
                     .Where(s => s.Payments.Any(p => p.PaymentDate >= startDate))
                     .ToList())
                 {
+                    decimal OurPayment = 0;
                     foreach (var payment in student.Payments.Where(p => p.PaymentDate >= startDate))
                     {
-                        worksheet.Cells[row, 1].Value = student.FirstName;
-                        worksheet.Cells[row, 2].Value = student.LastName;
-                        try
-                        {
-                            worksheet.Cells[row, 3].Value = _context.Classes.First(x => x.ClassId == student.ClassId).ClassName;
-                        }
-                        catch
-                        {
-                            worksheet.Cells[row, 3].Value = "Нет данных";
-                        }
-                        worksheet.Cells[row, 4].Value = payment.PaymentDate.ToString("dd.MM.yyyy");
-                        worksheet.Cells[row, 5].Value = payment.Amount;
-
+                        OurPayment += payment.Amount;
                         row++;
                     }
+                    worksheet.Cells[row, 1].Value = student.FirstName;
+                    worksheet.Cells[row, 2].Value = student.LastName;
+                    try
+                    {
+                        worksheet.Cells[row, 3].Value = _context.Classes.First(x => x.ClassId == student.ClassId).ToString();
+                    }
+                    catch
+                    {
+                        worksheet.Cells[row, 3].Value = "Нет данных";
+                    }
+                    worksheet.Cells[row, 4].Value = DateTime.Now.ToString("yyyy-MM-dd");
+                    worksheet.Cells[row, 5].Value = "-"+OurPayment;
+                    worksheet.Cells[row, 6].Value = _context.Balances.First(x=>x.StudentId==student.StudentId);
+
                 }
 
                 excelPackage.Save();
@@ -121,28 +125,32 @@ namespace SchoolFeeding.ViewModel
                 worksheet.Cells[1, 1].Value = "Имя";
                 worksheet.Cells[1, 2].Value = "Фамилия";
                 worksheet.Cells[1, 3].Value = "Класс";
-                worksheet.Cells[1, 4].Value = "Дата оплаты";
-                worksheet.Cells[1, 5].Value = "Сумма оплаты";
+                worksheet.Cells[1, 4].Value = "Дата";
+                worksheet.Cells[1, 5].Value = "Общий минус";
+                worksheet.Cells[1, 6].Value = "Баланс";
 
                 int row = 2;
                 var student = _context.Students.First(x => x.StudentId == studentId);
+                decimal OurPayment = 0;
                 foreach (var payment in student.Payments)
                 {
-                    worksheet.Cells[row, 1].Value = student.FirstName;
-                    worksheet.Cells[row, 2].Value = student.LastName;
-                    try
-                    {
-                        worksheet.Cells[row, 3].Value = _context.Classes.First(x => x.ClassId == student.StudentId).ToString();
-                    }
-                    catch
-                    {
-                        worksheet.Cells[row, 3].Value = "Нет данных";
-                    }
-                    worksheet.Cells[row, 4].Value = payment.PaymentDate.ToString("dd.MM.yyyy");
-                    worksheet.Cells[row, 5].Value = payment.Amount;
 
+                    OurPayment += payment.Amount;
                     row++;
                 }
+                worksheet.Cells[row, 1].Value = student.FirstName;
+                worksheet.Cells[row, 2].Value = student.LastName;
+                try
+                {
+                    worksheet.Cells[row, 3].Value = _context.Classes.First(x => x.ClassId == student.StudentId).ToString();
+                }
+                catch
+                {
+                    worksheet.Cells[row, 3].Value = "Нет данных";
+                }
+                worksheet.Cells[row, 4].Value = DateTime.Now.ToString("yyyy-MM-dd");
+                worksheet.Cells[row, 5].Value = "-" + OurPayment;
+                worksheet.Cells[row, 6].Value = _context.Balances.First(x => x.StudentId == student.StudentId);
                 excelPackage.Save();
             }
 

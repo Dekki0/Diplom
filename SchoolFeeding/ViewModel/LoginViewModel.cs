@@ -6,9 +6,11 @@ using SchoolFeeding.ViewModel.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
+using System.Windows.Controls;
 using System.Windows.Input;
 
 namespace SchoolFeeding.ViewModel
@@ -19,7 +21,7 @@ namespace SchoolFeeding.ViewModel
         private readonly SchoolFeedingContext _Context;
         private readonly IWindowService _windowService;
         private string _login;
-        private string _password;
+        private SecureString _password;
         #endregion
 
         #region public property
@@ -28,12 +30,7 @@ namespace SchoolFeeding.ViewModel
 			get =>_login;
 			set => SetProperty(ref _login, value.Trim());
 		}
-		public string Password
-		{
-			get => _password;
-			set => SetProperty(ref _password, value);
-		}
-		public ICommand LoginCommand { get;}
+        public ICommand LoginCommand { get;}
         #endregion
 
         #region public constructor
@@ -48,7 +45,9 @@ namespace SchoolFeeding.ViewModel
         #region private methods
         private void ChangePage(object args)
 		{
-			if(Password.IsNullOrEmpty()||Login.IsNullOrEmpty())
+            var passwordBox = args as PasswordBox;
+            var Password = passwordBox.Password;
+            if (Password.IsNullOrEmpty()||Login.IsNullOrEmpty())
 			{
 				MessageBox.Show("Введите логин и пароль", "Внимание", MessageBoxButton.OK, MessageBoxImage.Warning);
 				return;

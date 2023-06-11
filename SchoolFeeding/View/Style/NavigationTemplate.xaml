@@ -21,4 +21,7 @@
     <DataTemplate DataType="{x:Type viewModel:ReportViewModel}">
         <viewPage:ReportingPage/>
     </DataTemplate>
+    <DataTemplate DataType="{x:Type viewModel:VisitsViewModel}">
+        <viewPage:VisitStudent/>
+    </DataTemplate>
 </ResourceDictionary>

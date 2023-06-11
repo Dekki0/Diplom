@@ -48,22 +48,23 @@
                 FontSize="20"
                 VerticalContentAlignment="Center"
                 Text="{Binding Login}"/>
-            <TextBox
+            <PasswordBox
+                Name="txtPassword"
                 HorizontalAlignment="Left"
-                   VerticalAlignment="Center"
+                VerticalAlignment="Center"
                 Grid.Row="1"
                 Grid.Column="1"
                 Width="150" Height="30"
                 MaxLength="15"
                 FontSize="20"
-                VerticalContentAlignment="Center"
-                Text="{Binding Password}"/>
+                VerticalContentAlignment="Center"/>
 
             <Button Margin="40 20 40 20"
                 Content="Войти"
                 Grid.Row="2"
                 Grid.ColumnSpan="2"
-                    Command="{Binding LoginCommand}"/>
+                    Command="{Binding LoginCommand}"
+                    CommandParameter="{Binding ElementName=txtPassword}"/>
 
         </Grid>
         

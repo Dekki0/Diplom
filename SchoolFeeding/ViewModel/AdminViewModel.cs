@@ -2,6 +2,7 @@
 using SchoolFeeding.Model.DatabaseModel;
 using SchoolFeeding.Model.Dto;
 using SchoolFeeding.Model.Entities;
+using SchoolFeeding.Model.Utilities;
 using SchoolFeeding.ViewModel.Services;
 using System;
 using System.Collections.Generic;
@@ -102,18 +103,39 @@ namespace SchoolFeeding.ViewModel
         public ICommand SummCommand { get; }
         public AdminViewModel()
         {
-            _context = new();
-            var list = new List<StudentDto>();
-            foreach (var item in _context.Students.Select(x => x).ToList())
-                list.Add(new StudentDto(item));
-            list.Add(new StudentDto() { Id = -1 });
-            DataCollection = new(list);
+            _context = new();           
+            DataCollection = new(GetItem(1));
             StudentChangeCommand = new RelayCommand<object>(ChangeStudent);
             StudentAddCommand = new RelayCommand<object>(AddStudent);
             StudentDeleteCommand = new RelayCommand<object>(DeleteStudent);
             SummCommand = new RelayCommand<object>(SummMethod);
             IsAdd = false;
             IsChange = false;
+        }
+        private void GetItem()
+        {
+            var list = new List<StudentDto>();
+            foreach (var item in _context.Students.Select(x => x).ToList())
+            {
+                if (item.FirstName == "Админ")
+                    continue;
+                else
+                    list.Add(new StudentDto(item));
+            }
+            list.Add(new StudentDto() { Id = -1 });
+        }
+        private List<StudentDto> GetItem(object args)
+        {
+            var list = new List<StudentDto>();
+            foreach (var item in _context.Students.Select(x => x).ToList())
+            {
+                if (item.FirstName == "Админ")
+                    continue;
+                else
+                    list.Add(new StudentDto(item));
+            }
+            list.Add(new StudentDto() { Id = -1 });
+            return list;
         }
         private void SummMethod(object args)
         {
@@ -127,11 +149,7 @@ namespace SchoolFeeding.ViewModel
                     balance.Balance1 = balance.Balance1 + Convert.ToDecimal(Summ);
                     _context.SaveChanges();
                     MessageBox.Show("Оплата успешно внесена");
-                    var list = new List<StudentDto>();
-                    foreach (var item in _context.Students.Select(x => x).ToList())
-                        list.Add(new StudentDto(item));
-                    list.Add(new StudentDto() { Id = -1 });
-                    DataCollection = new(list);
+                    DataCollection = new(GetItem(1));
                 }
                 else
                 {
@@ -171,11 +189,7 @@ namespace SchoolFeeding.ViewModel
                     _context.Students.Remove(student);
 
                     _context.SaveChanges();
-                    var list = new List<StudentDto>();
-                    foreach (var item in _context.Students.Select(x => x).ToList())
-                        list.Add(new StudentDto(item));
-                    list.Add(new StudentDto() { Id = -1 });
-                    DataCollection = new(list);
+                    DataCollection = new(GetItem(1));
                 }
                 catch (Exception e)
                 {
@@ -193,23 +207,47 @@ namespace SchoolFeeding.ViewModel
                 }
                 else
                 {
-                    _context.Students.Add(new Student()
+                    var newStudent = new Student()
                     {
                         FirstName = FirstName,
                         LastName = LastName,
-                        ClassId = GetClass(),
-                        Balance = new Balance()
-                    });
-                    
+                        ClassId = GetClass()
+                    };
+
+                    var newBalance = new Balance()
+                    {
+                        Balance1 = 0,
+                        Student = newStudent
+                    };
+
+                    var newPayment = new Payment()
+                    {
+                        Amount = 0,
+                        PaymentDate = DateTime.Now.Date,
+                        Student = newStudent
+                    };
+
+                    var newUser = new User()
+                    {
+                        Login = newStudent.FirstName,
+                        Password = newStudent.LastName + _context.Classes.First(x => x.ClassId == GetClass()).ToString(),
+                        Role = "Ученик",
+                        Student = newStudent
+                    };
+
+                    _context.Students.Add(newStudent);
+                    _context.Balances.Add(newBalance);
+                    _context.Payments.Add(newPayment);
+                    _context.Users.Add(newUser);
+
+                    _context.SaveChanges();
                 }
+
+
+
+
                 _context.SaveChanges();
-                
-                _context.SaveChanges();
-                var list = new List<StudentDto>();
-                foreach (var item in _context.Students.Select(x => x).ToList())
-                    list.Add(new StudentDto(item));
-                list.Add(new StudentDto() { Id = -1 });
-                DataCollection = new(list);
+                DataCollection = new(GetItem(1));
                 MessageBox.Show("Добавление прошло успешно");
             }
             catch (Exception e)
@@ -238,11 +276,7 @@ namespace SchoolFeeding.ViewModel
                     
                 }
                 _context.SaveChanges();
-                var list = new List<StudentDto>();
-                foreach (var item in _context.Students.Select(x => x).ToList())
-                    list.Add(new StudentDto(item));
-                list.Add(new StudentDto() { Id = -1 });
-                DataCollection = new(list);
+                DataCollection = new(GetItem(1));
                 MessageBox.Show("Сохранение прошло успешно");
             }
             catch(Exception e)

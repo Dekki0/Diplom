@@ -29,12 +29,13 @@ namespace SchoolFeeding.ViewModel
         {
 
             _windowService = new WindowService();
-            MenuCommand = new RelayCommand<object>[4]
+            MenuCommand = new RelayCommand<object>[5]
             {
               new RelayCommand<object>(Info),
               new RelayCommand<object>(Admin),
               new RelayCommand<object>(Report),
-              new RelayCommand<object>(Logout)
+              new RelayCommand<object>(Logout),
+              new RelayCommand<object>(Visits)
             };
             if (Configure.GetParametr("CurrentRole").Equals("Админ"))
                 IsButtonVisible = true;
@@ -51,6 +52,7 @@ namespace SchoolFeeding.ViewModel
         private void Info(object args) => StackControl.AddPage(new InfoViewModel());
         private void Admin(object args) => StackControl.AddPage(new AdminViewModel());
         private void Report(object args) => StackControl.AddPage(new ReportViewModel());
+        private void Visits(object args) => StackControl.AddPage(new VisitsViewModel());
         #endregion
     }
 }

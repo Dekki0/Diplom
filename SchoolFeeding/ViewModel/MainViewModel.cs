@@ -23,10 +23,10 @@ namespace SchoolFeeding.ViewModel
         #endregion
 
         #region public block
-        public object Page 
+        public object Page
         {
-            get => page??new MenuViewModel();
-            private set => SetProperty(ref page, value, nameof(Page)); 
+            get => page ?? new MenuViewModel();
+            private set => SetProperty(ref page, value, nameof(Page));
         }
         public ICommand BackPageCommand { get; }
         public MainViewModel()
@@ -41,7 +41,7 @@ namespace SchoolFeeding.ViewModel
         #endregion
 
         #region private methods
-        private void BackPage(object args) => Page=StackControl.GetPage()??new MenuViewModel();
+        private void BackPage(object args) => Page = StackControl.GetPage() ?? new MenuViewModel();
         private void HandleDataChanged(object newData) => Page = newData;
         private void SubtractAmountForDaysSinceLastPayment()
         {
@@ -62,23 +62,30 @@ namespace SchoolFeeding.ViewModel
                     DateTime currentDateMinusDays = currentDate.AddDays(-i);
                     if (currentDateMinusDays.DayOfWeek != DayOfWeek.Saturday && currentDateMinusDays.DayOfWeek != DayOfWeek.Sunday)
                     {
-                        Balance studentBalance = _context.Balances.FirstOrDefault(b => b.StudentId == student.StudentId);
-                        if (studentBalance != null)
+                        bool isVisitExists = _context.Visits
+                                .Any(v => v.StudentId == student.StudentId && v.DateVisit.Date == currentDateMinusDays.Date);
+                        if (!isVisitExists)
                         {
-                            studentBalance.Balance1 -= 3;
-                            Payment newPayment = new Payment
+                            Balance studentBalance = _context.Balances.FirstOrDefault(b => b.StudentId == student.StudentId);
+                            if (studentBalance != null)
                             {
-                                StudentId = student.StudentId,
-                                Amount = 3,
-                                PaymentDate = currentDateMinusDays
-                            };
-                            _context.Payments.Add(newPayment);
+                                studentBalance.Balance1 -= 3;
+                                Payment newPayment = new Payment
+                                {
+                                    StudentId = student.StudentId,
+                                    Amount = 3,
+                                    PaymentDate = currentDateMinusDays
+                                };
+                                _context.Payments.Add(newPayment);
+                            }
                         }
                     }
                 }
+
             }
             _context.SaveChanges();
         }
+
 
         #endregion 
     }

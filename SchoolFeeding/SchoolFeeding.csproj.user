@@ -22,6 +22,9 @@
     <Compile Update="View\Pages\UsersInfoPage.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="View\Pages\VisitStudent.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Page Update="View\LoginView.xaml">
@@ -40,6 +43,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="View\Pages\UsersInfoPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\Pages\VisitStudent.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="View\Style\NavigationTemplate.xaml">

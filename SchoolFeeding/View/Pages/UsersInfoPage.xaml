@@ -7,16 +7,22 @@
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
     <Grid>
-        <DataGrid 
-            IsReadOnly="True" 
-            ItemsSource="{Binding PaymentsData}"
-            AutoGenerateColumns="False"
-            FontSize="40"
-            >
-            <DataGrid.Columns>
-                <DataGridTextColumn CanUserResize="False" FontSize="40" Header="Уплачено" Binding="{Binding Amount}"/>
-                <DataGridTextColumn CanUserResize="False" FontSize="40" Header="Дата оплаты" Binding="{Binding PaymentDate}"/>
-            </DataGrid.Columns>
-        </DataGrid>
-    </Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid Grid.Column="0">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Label Grid.Row="0" Content="Минус" FontSize="30" HorizontalContentAlignment="Center" VerticalAlignment="Bottom" Width="300" Height="50"/>
+            <Label Grid.Row="1" Content="{Binding Minus}" FontSize="30" HorizontalContentAlignment="Center" Width="300" Height="50"/>
+            <Label Grid.Row="2" Content="Баланс" FontSize="30" HorizontalContentAlignment="Center" VerticalAlignment="Bottom" Width="300" Height="50"/>
+            <Label Grid.Row="3" Content="{Binding Balance}" FontSize="30" HorizontalContentAlignment="Center" Width="300" Height="50"/>
+        </Grid>
+        <Label Grid.Column="1" Content="{Binding CurrentDate}" FontSize="30" HorizontalAlignment="Center" VerticalAlignment="Center" Width="300" Height="50"/>
+   </Grid>
 </UserControl>

@@ -14,18 +14,22 @@ namespace SchoolFeeding.ViewModel
     public class InfoViewModel : ViewModelBase
     {
         private readonly SchoolFeedingContext _context;
-        private ObservableCollection<object> paymentsData;
-        public ObservableCollection<object> PaymentsData 
-        {
-            get => paymentsData;
-            set => SetProperty(ref paymentsData, value, nameof(PaymentsData));
-        }
+        
+        public string Minus { get; set; }
+        public string Balance { get; set; }
+        public string CurrentDate { get; set; }
         public InfoViewModel()
         {
+            if (Configure.CurrentUser.Role == "Админ")
+                return;
             _context = new SchoolFeedingContext();
-            PaymentsData = new ObservableCollection<object>(
-                _context.Payments
-                    .Where(student=>student.StudentId.Equals(Configure.CurrentUser.StudentId)).ToList());
+            decimal min = 0;
+            foreach(var item in _context.Payments.Where(x=>x.StudentId==Configure.CurrentUser.StudentId))
+                min += item.Amount;
+
+            Minus = "-" + min.ToString();
+            Balance = _context.Balances.First(x => x.StudentId == Configure.CurrentUser.StudentId).Balance1.ToString();
+            CurrentDate = DateTime.Now.ToString("yyyy-MM-dd");
         }
     }
 }

@@ -234,3 +234,5 @@ C:\Users\artem\Desktop\DEKKI\SchoolFeeding\bin\Debug\net7.0-windows\Microsoft.Ex
 C:\Users\artem\Desktop\DEKKI\SchoolFeeding\bin\Debug\net7.0-windows\Microsoft.Extensions.FileProviders.Physical.dll
 C:\Users\artem\Desktop\DEKKI\SchoolFeeding\bin\Debug\net7.0-windows\Microsoft.Extensions.FileSystemGlobbing.dll
 C:\Users\artem\Desktop\DEKKI\SchoolFeeding\bin\Debug\net7.0-windows\Microsoft.IO.RecyclableMemoryStream.dll
+C:\Users\artem\Desktop\DEKKI\SchoolFeeding\obj\Debug\net7.0-windows\View\Pages\VisitStudent.g.cs
+C:\Users\artem\Desktop\DEKKI\SchoolFeeding\obj\Debug\net7.0-windows\View\Pages\VisitStudent.baml

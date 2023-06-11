@@ -17,15 +17,16 @@
             <RowDefinition/>
             <RowDefinition/>
             <RowDefinition/>
+            <RowDefinition/>
         </Grid.RowDefinitions>
 
         <Button 
-            Margin="250 20 250 20"
+            Margin="250 10 250 10"
             FontSize="20"
             Content="Просмотр информации"
             Command="{Binding MenuCommand[0]}"/>
         <Button
-            Margin="250 20 250 20"
+            Margin="250 10 250 10"
             FontSize="20"
             Grid.Row="2"
             Content="Отчётность" 
@@ -33,7 +34,7 @@
             Visibility="{Binding IsButtonVisible, Converter={StaticResource VisibilityConverter}}"/>
 
         <Button
-            Margin="250 20 250 20"
+            Margin="250 10 250 10"
             FontSize="20"
             Grid.Row="3"
             Content="Администрирование"
@@ -41,15 +42,21 @@
             Visibility="{Binding IsButtonVisible, Converter={StaticResource VisibilityConverter}}"/>
 
         <Button
-            Margin="250 20 250 20"
+            Margin="250 10 250 10"
             FontSize="20"
             Grid.Row="1"
             Content="Справка"/>
-        
         <Button 
-            Margin="250 20 250 20"
+            Margin="250 10 250 10"
             FontSize="20"
             Grid.Row="4"
+            Content="Отметить"
+            Command="{Binding MenuCommand[4]}"
+            Visibility="{Binding IsButtonVisible, Converter={StaticResource VisibilityConverter}}"/>
+        <Button 
+            Margin="250 10 250 10"
+            FontSize="20"
+            Grid.Row="5"
             Content="Выход"
             Command="{Binding MenuCommand[3]}"/>
     </Grid>

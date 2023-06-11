@@ -21,17 +21,10 @@
         <Menu 
             HorizontalAlignment="Left" 
             Margin="5,5,0,5" 
-            Width="90"
+            Width="45"
             Height="20"
             Grid.Row="0">
-            <MenuItem Height="20" 
-                      Width="45"
-                      Header="Файл"
-                      HorizontalContentAlignment="Center"
-                      >
-
-            </MenuItem>
-            
+                       
             <MenuItem Height="20" 
                       Width="45"
                       Header="Назад"

@@ -20,4 +20,6 @@ public partial class Student
     public virtual ICollection<Payment> Payments { get; set; } = new List<Payment>();
 
     public virtual ICollection<User> Users { get; set; } = new List<User>();
+
+    public virtual Visit? Visit { get; set; }
 }
